@@ -165,10 +165,74 @@
   </header>
 
   <main id="main">
-    <section class="soon">
+    <section class="listing">
       <div class="wrap">
         <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../adopt/index.html">Adopt</a></li><li aria-current="page">Cats</li></ol></nav>
-        <h1><span class="soon__page">Cats</span> Coming soon.</h1>
+        <div class="listing__head">
+          <h1>Cats</h1>
+          <p class="listing__lead">Every cat is spayed or neutered, vaccinated, dewormed, and microchipped before going home. Meet them at the Regional Centre, 549 Tenth Line, Collingwood.</p>
+        </div>
+        <p class="demo-note" role="note"><strong>Demo</strong> These are sample cats and photos. On the new site, this page rebuilds itself from PetPoint every 30 to 60 minutes, so new arrivals appear and adopted cats drop off automatically.</p>
+
+        <div class="listing__tools" data-pet-tools>
+          <p class="listing__count" aria-live="polite"><span data-pet-count>8</span> cats</p>
+          <div class="listing__controls">
+            <label class="field">Age
+              <select data-pet-filter="group">
+                <option value="">All ages</option>
+                <option value="kitten">Kittens</option>
+                <option value="adult">Adults</option>
+                <option value="senior">Seniors</option>
+              </select>
+            </label>
+            <label class="field">Sex
+              <select data-pet-filter="sex">
+                <option value="">Any</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+              </select>
+            </label>
+            <div class="sort" role="group" aria-label="Sort cats">
+              <button type="button" data-pet-sort="arrived" aria-pressed="true">Newest</button>
+              <button type="button" data-pet-sort="name" aria-pressed="false">Name</button>
+              <button type="button" data-pet-sort="age" aria-pressed="false">Age</button>
+            </div>
+          </div>
+        </div>
+
+        <ul class="pets" data-pet-list data-page-size="4">
+        <li class="animal pet-card" data-name="Olive" data-age="3" data-arrived="2026-10-11" data-group="kitten" data-sex="female">
+          <a href="cats/olive.html"><img src="https://media.cwd-cdn.com/gths/images/demo/cat-olive.jpg" alt="Olive, a kitten calico cat" loading="lazy"><span class="animal__name">Olive</span><span class="chips"><span>Kitten</span><span>Female</span><span>3 months</span></span></a>
+        </li>
+        <li class="animal pet-card" data-name="Biscuit" data-age="4" data-arrived="2026-10-08" data-group="kitten" data-sex="male">
+          <a href="cats/biscuit.html"><img src="https://media.cwd-cdn.com/gths/images/demo/cat-biscuit.jpg" alt="Biscuit, a kitten orange tabby cat" loading="lazy"><span class="animal__name">Biscuit</span><span class="chips"><span>Kitten</span><span>Male</span><span>4 months</span></span></a>
+        </li>
+        <li class="animal pet-card" data-name="Clover" data-age="18" data-arrived="2026-09-30" data-group="adult" data-sex="female">
+          <a href="cats/clover.html"><img src="https://media.cwd-cdn.com/gths/images/demo/cat-clover.jpg" alt="Clover, an adult brown tabby and white cat" loading="lazy"><span class="animal__name">Clover</span><span class="chips"><span>Adult</span><span>Female</span><span>1 year</span></span></a>
+        </li>
+        <li class="animal pet-card" data-name="Smudge" data-age="26" data-arrived="2026-09-21" data-group="adult" data-sex="male">
+          <a href="cats/smudge.html"><img src="https://media.cwd-cdn.com/gths/images/demo/cat-smudge.jpg" alt="Smudge, an adult grey and white cat" loading="lazy"><span class="animal__name">Smudge</span><span class="chips"><span>Adult</span><span>Male</span><span>2 years</span></span></a>
+        </li>
+        <li class="animal pet-card" data-name="Juniper" data-age="38" data-arrived="2026-09-02" data-group="adult" data-sex="female" hidden>
+          <a href="cats/juniper.html"><img src="https://media.cwd-cdn.com/gths/images/demo/cat-juniper-1.jpg" alt="Juniper, an adult grey tabby cat" loading="lazy"><span class="animal__name">Juniper</span><span class="chips"><span>Adult</span><span>Female</span><span>3 years</span></span></a>
+        </li>
+        <li class="animal pet-card" data-name="Pepper" data-age="62" data-arrived="2026-08-19" data-group="adult" data-sex="male" hidden>
+          <a href="cats/pepper.html"><img src="https://media.cwd-cdn.com/gths/images/demo/cat-pepper.jpg" alt="Pepper, an adult black and white cat" loading="lazy"><span class="animal__name">Pepper</span><span class="chips"><span>Adult</span><span>Male</span><span>5 years</span></span></a>
+        </li>
+        <li class="animal pet-card" data-name="Marmalade" data-age="126" data-arrived="2026-07-28" data-group="senior" data-sex="male" hidden>
+          <a href="cats/marmalade.html"><img src="https://media.cwd-cdn.com/gths/images/demo/cat-marmalade.jpg" alt="Marmalade, a senior orange cat" loading="lazy"><span class="animal__name">Marmalade</span><span class="chips"><span>Senior</span><span>Male</span><span>10 years</span></span></a>
+        </li>
+        <li class="animal pet-card" data-name="Willow" data-age="110" data-arrived="2026-06-30" data-group="senior" data-sex="female" hidden>
+          <a href="cats/willow.html"><img src="https://media.cwd-cdn.com/gths/images/demo/cat-willow.jpg" alt="Willow, a senior tortoiseshell cat" loading="lazy"><span class="animal__name">Willow</span><span class="chips"><span>Senior</span><span>Female</span><span>9 years</span></span></a>
+        </li>
+        </ul>
+        <p class="pets__empty" data-pet-empty hidden>No cats match those choices right now. Try another age or sex, or check back soon.</p>
+        <div class="pets__more"><button type="button" class="btn btn--outline" data-pet-more>Show more cats</button></div>
+
+        <div class="sponsor">
+          <p><strong>Can't adopt right now?</strong> A gift covers food, medical care, and comfort while they wait for their family.</p>
+          <a href="../give/donate.html" class="btn btn--donate">Help care for a cat</a>
+        </div>
       </div>
     </section>
   </main>
@@ -226,5 +290,6 @@
   </footer>
 
   <script src="../js/nav.js"></script>
+  <script src="../js/animals.js"></script>
 </body>
 </html>

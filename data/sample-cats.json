@@ -1,0 +1,131 @@
+[
+  {
+    "id": "DEMO1001",
+    "name": "Juniper",
+    "sex": "Female",
+    "age_months": 38,
+    "breed": "Domestic Shorthair",
+    "colour": "Grey tabby",
+    "altered": true,
+    "good_with": {"children": "Yes", "cats": "Yes", "dogs": "Unknown"},
+    "arrived": "2026-09-02",
+    "photos": ["cat-juniper-1.jpg", "cat-juniper-2.jpg", "cat-juniper-3.jpg"],
+    "description": [
+      "Juniper is a gentle, chatty girl who greets everyone at the door of the cat room. She loves a sunny windowsill, a soft blanket and a good chin scratch.",
+      "She came to us when her family could no longer keep her, and she has settled in beautifully. Staff say she is playful in short bursts and happiest curled up beside her people in the evening.",
+      "Juniper has lived with another cat before and would suit a calm home with children over eight."
+    ]
+  },
+  {
+    "id": "DEMO1002",
+    "name": "Biscuit",
+    "sex": "Male",
+    "age_months": 4,
+    "breed": "Domestic Shorthair",
+    "colour": "Orange tabby",
+    "altered": true,
+    "good_with": {"children": "Yes", "cats": "Yes", "dogs": "Yes"},
+    "arrived": "2026-10-08",
+    "photos": ["cat-biscuit.jpg"],
+    "description": [
+      "Biscuit is a bold, curious kitten who wants to be part of everything. He chases toys, climbs anything he can reach and then falls asleep wherever he lands.",
+      "He would do well with another young cat to play with, or a family ready for plenty of kitten energy."
+    ]
+  },
+  {
+    "id": "DEMO1003",
+    "name": "Pepper",
+    "sex": "Male",
+    "age_months": 62,
+    "breed": "Domestic Shorthair",
+    "colour": "Black and white",
+    "altered": true,
+    "good_with": {"children": "Yes", "cats": "No", "dogs": "Unknown"},
+    "arrived": "2026-08-19",
+    "photos": ["cat-pepper.jpg"],
+    "description": [
+      "Pepper is a calm, dignified gentleman in a tuxedo. He likes a predictable routine, a window to watch the birds and a lap once he knows you.",
+      "He would prefer to be the only cat in the home, where he can have all the attention to himself."
+    ]
+  },
+  {
+    "id": "DEMO1004",
+    "name": "Marmalade",
+    "sex": "Male",
+    "age_months": 126,
+    "breed": "Domestic Longhair",
+    "colour": "Orange",
+    "altered": true,
+    "good_with": {"children": "Yes", "cats": "Yes", "dogs": "Yes"},
+    "arrived": "2026-07-28",
+    "photos": ["cat-marmalade.jpg"],
+    "description": [
+      "Marmalade is a big, fluffy senior with a heart to match. He spends his days napping in his favourite bed and purring the moment anyone sits down beside him.",
+      "He needs regular brushing to keep his coat in good shape, which he enjoys. He would be a wonderful companion for a quiet household."
+    ]
+  },
+  {
+    "id": "DEMO1005",
+    "name": "Olive",
+    "sex": "Female",
+    "age_months": 3,
+    "breed": "Domestic Shorthair",
+    "colour": "Calico",
+    "altered": true,
+    "good_with": {"children": "Yes", "cats": "Yes", "dogs": "Unknown"},
+    "arrived": "2026-10-11",
+    "photos": ["cat-olive.jpg"],
+    "description": [
+      "Olive is a sweet little calico who is still a bit shy with new people, but warms up quickly with a gentle voice and a wand toy.",
+      "She would love a quiet home with someone patient, ideally with a friendly cat to show her the ropes."
+    ]
+  },
+  {
+    "id": "DEMO1006",
+    "name": "Smudge",
+    "sex": "Male",
+    "age_months": 26,
+    "breed": "Domestic Shorthair",
+    "colour": "Grey and white",
+    "altered": true,
+    "good_with": {"children": "Yes", "cats": "Yes", "dogs": "Yes"},
+    "arrived": "2026-09-21",
+    "photos": ["cat-smudge.jpg"],
+    "description": [
+      "Smudge is a laid-back young cat who flops over for belly rubs and follows people from room to room. He has never met a stranger.",
+      "He gets along with other cats and has lived with a calm dog. Smudge would fit into almost any home."
+    ]
+  },
+  {
+    "id": "DEMO1007",
+    "name": "Willow",
+    "sex": "Female",
+    "age_months": 110,
+    "breed": "Domestic Shorthair",
+    "colour": "Tortoiseshell",
+    "altered": true,
+    "good_with": {"children": "Unknown", "cats": "No", "dogs": "No"},
+    "arrived": "2026-06-30",
+    "photos": ["cat-willow.jpg"],
+    "description": [
+      "Willow is a quiet, thoughtful senior who has been with us the longest. She takes a little time to trust, but once she does she is devoted.",
+      "She would suit an adult home without other pets, where she can enjoy peace and a sunny spot."
+    ]
+  },
+  {
+    "id": "DEMO1008",
+    "name": "Clover",
+    "sex": "Female",
+    "age_months": 18,
+    "breed": "Domestic Shorthair",
+    "colour": "Brown tabby and white",
+    "altered": true,
+    "good_with": {"children": "Yes", "cats": "Yes", "dogs": "Unknown"},
+    "arrived": "2026-09-30",
+    "photos": ["cat-clover.jpg"],
+    "description": [
+      "Clover has never met a cardboard box she didn't like. She is playful, clever and always ready to investigate something new.",
+      "She would love a home with plenty of toys and someone who enjoys an inquisitive companion."
+    ]
+  }
+]
