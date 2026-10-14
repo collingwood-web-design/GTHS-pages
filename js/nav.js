@@ -114,10 +114,10 @@
   }, { passive: true });
   onScroll();
 
-  document.querySelectorAll(".head, .help__list li, .insta__grid li, .animal").forEach(function (el) {
+  document.querySelectorAll(".head, .help__list li, .insta__grid li, .animals").forEach(function (el) {
     el.classList.add("reveal");
   });
-  document.querySelectorAll(".bento, .stats, .help__list, .insta__grid, .animals, .stories, .centre-list").forEach(function (group) {
+  document.querySelectorAll(".bento, .stats, .help__list, .insta__grid, .stories, .centre-list").forEach(function (group) {
     Array.prototype.forEach.call(group.children, function (child, i) {
       child.style.setProperty("--delay", Math.min(i, 6) * 0.09 + "s");
     });
