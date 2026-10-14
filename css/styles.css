@@ -8,6 +8,7 @@
   --teal: #009db6;
   --teal-bright: #5fcbdc;
   --teal-soft: #9acdd5;
+  --teal-mid: #4da2b0;
   --lagoon: #d9f1f4;
   --mist: #eef8f9;
   --paper: #f9fcfc;
@@ -845,7 +846,12 @@ h3 { font-size: clamp(1.3rem, 1.9vw, 1.6rem); letter-spacing: -0.02em; line-heig
   color: var(--white);
   transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
-.social a:hover { background: var(--teal-bright); box-shadow: inset 0 0 0 1px var(--teal-bright); color: var(--ink); transform: translateY(-2px); }
+.social li:nth-child(1) a { background: var(--lagoon); color: var(--ink); }
+.social li:nth-child(2) a { background: var(--teal-soft); color: var(--ink); }
+.social li:nth-child(3) a { background: var(--teal-mid); color: var(--ink); }
+.social li:nth-child(4) a { background: var(--teal-deep); color: var(--white); }
+.social li:nth-child(5) a { background: var(--ink-2); color: var(--white); }
+.social li a:hover { background: var(--white); box-shadow: inset 0 0 0 1px var(--white); color: var(--ink); transform: translateY(-2px); }
 .social svg { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 @media (prefers-reduced-motion: reduce) { .social a:hover { transform: none; } }
 
@@ -875,6 +881,26 @@ h3 { font-size: clamp(1.3rem, 1.9vw, 1.6rem); letter-spacing: -0.02em; line-heig
 .footer__bottom p { margin: 0; }
 .footer__bottom ul { display: flex; gap: 1.5rem; }
 .footer__bottom ul li { margin: 0; }
+.footer__link-btn { padding: 0; border: 0; background: none; color: var(--white); font: inherit; cursor: pointer; }
+.footer__link-btn:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Cookie consent ---------- */
+.consent {
+  position: fixed;
+  left: 1rem; bottom: 1rem;
+  z-index: 160;
+  width: min(460px, calc(100% - 2rem));
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-m);
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 0 24px 60px -18px rgba(5, 46, 54, 0.45);
+}
+.consent[hidden] { display: none; }
+.consent__text { margin: 0 0 1rem; font-size: 0.92rem; line-height: 1.55; color: var(--slate); }
+.consent__text a { color: var(--teal-deep); font-weight: 600; text-underline-offset: 3px; }
+.consent__actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 
 /* ---------- Coming soon pages ---------- */
 .soon {

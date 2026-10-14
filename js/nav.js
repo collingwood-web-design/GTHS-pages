@@ -57,6 +57,35 @@
     if (openTrigger) openTrigger.focus();
   });
 
+  var navScript = document.querySelector('script[src$="js/nav.js"]');
+  var siteRoot = navScript ? navScript.getAttribute("src").replace("js/nav.js", "") : "";
+  var consentKey = "gths-cookie-consent";
+  var consent = document.createElement("section");
+  consent.className = "consent";
+  consent.setAttribute("aria-label", "Cookie consent");
+  consent.hidden = true;
+  consent.innerHTML =
+    '<p class="consent__text">We use cookies to keep this site working and, with your permission, to understand how it\u2019s used so we can improve it. ' +
+    '<a href="' + siteRoot + 'privacy.html">Privacy policy</a></p>' +
+    '<div class="consent__actions">' +
+    '<button type="button" class="btn btn--dark btn--sm" data-consent="all">Accept all</button>' +
+    '<button type="button" class="btn btn--outline btn--sm" data-consent="necessary">Necessary only</button>' +
+    "</div>";
+  document.body.appendChild(consent);
+  try { consent.hidden = !!localStorage.getItem(consentKey); } catch (e) { consent.hidden = false; }
+  consent.addEventListener("click", function (e) {
+    var choice = e.target.getAttribute("data-consent");
+    if (!choice) return;
+    try { localStorage.setItem(consentKey, choice); } catch (err) {}
+    consent.hidden = true;
+  });
+  document.querySelectorAll("[data-cookie-settings]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      consent.hidden = false;
+      consent.querySelector("button").focus();
+    });
+  });
+
   var list = document.getElementById("animal-list");
   document.querySelectorAll("[data-scroll]").forEach(function (btn) {
     btn.addEventListener("click", function () {
