@@ -19,8 +19,8 @@
     }
 
     function compare(a, b) {
-      if (sortKey === "name") return a.dataset.name.localeCompare(b.dataset.name);
       if (sortKey === "age") return Number(a.dataset.age) - Number(b.dataset.age);
+      if (sortKey === "longest") return a.dataset.arrived.localeCompare(b.dataset.arrived);
       return b.dataset.arrived.localeCompare(a.dataset.arrived);
     }
 
