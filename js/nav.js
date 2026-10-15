@@ -14,15 +14,6 @@
     });
   }
 
-  var notice = document.querySelector("[data-notice]");
-  if (notice) {
-    notice.querySelector(".notice__close").addEventListener("click", function () {
-      notice.hidden = true;
-      try { localStorage.setItem("gths-notice", notice.getAttribute("data-notice")); } catch (e) {}
-      document.querySelector(".utility__links a").focus();
-    });
-  }
-
   function closeMenus(except) {
     triggers.forEach(function (t) {
       if (t !== except) t.setAttribute("aria-expanded", "false");
