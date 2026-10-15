@@ -17,6 +17,15 @@
 
   <div class="mockup-flag" role="note"><span>Concept · navigation preview</span><button type="button" class="mockup-flag__close" aria-label="Hide concept label">×</button></div>
 
+  <!-- Announcement bar -->
+  <div class="notice" data-notice="kitten-shower" role="region" aria-label="Announcement">
+    <div class="wrap notice__inner">
+      <p class="notice__text"><span class="notice__tag">Example</span> Kitten Shower is coming — help us get ready for kitten season. <a href="../get-involved/events.html">See how to help<span aria-hidden="true"> →</span></a></p>
+      <button type="button" class="notice__close" aria-label="Dismiss announcement">×</button>
+    </div>
+  </div>
+  <script>try { var n = document.querySelector("[data-notice]"); n.hidden = localStorage.getItem("gths-notice") === n.getAttribute("data-notice"); } catch (e) {}</script>
+
   <!-- Utility bar -->
   <div class="utility">
     <div class="wrap utility__inner">
